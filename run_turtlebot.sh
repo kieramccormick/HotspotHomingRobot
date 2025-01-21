@@ -18,7 +18,7 @@ sleep 5
 
 # Terminal 2: SSH and bring up turtlebot
 tmux split-window -h
-tmux send-keys -t turtlebot "ssh ubuntu@192.168.190" C-m
+tmux send-keys -t turtlebot "ssh ubuntu@192.168.0.190" C-m
 sleep 2  # Allow time for the SSH connection
 # Assuming passwordless SSH is set up; if not, install and use sshpass
 tmux send-keys -t turtlebot "turtlebot" C-m
